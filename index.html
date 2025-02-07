@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MadzikLandia – Oficjalna Strona</title>
+    <style>
+        /* Tło strony z gradientem */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+            background: linear-gradient(to right, #800080, #ff69b4); /* Gradient od fioletowego do różowego */
+            color: white;
+            overflow-x: hidden;
+            animation: fadeIn 2s ease-in-out forwards; /* Animacja wejścia */
+        }
+
+        /* Animacja dla tytułu */
+        h1 {
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* Animacja fade-in dla elementów */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Styl nawigacji */
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #ffd700; /* Złoty kolor */
+            font-weight: bold;
+            transition: transform 0.3s, color 0.3s ease; /* Przejście transformacji i koloru */
+        }
+
+        /* Efekt hover dla linków */
+        nav a:hover {
+            transform: scale(1.1);
+            color: #ff1493; /* Różowy kolor przy hoverze */
+        }
+
+        /* Animacja bounce dla obrazka */
+        img.profile {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 4px solid white;
+            box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5); /* Cień wokół obrazka */
+            animation: bounce 2s infinite alternate;
+        }
+
+        @keyframes bounce {
+            from { transform: translateY(0px); }
+            to { transform: translateY(-10px); }
+        }
+
+        /* Styl dla listy treści */
+        ul {
+            list-style-type: none;
+            padding: 0;
+            animation: slideUp 1s ease-out forwards;
+        }
+
+        ul li {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        /* Animacja dla elementów wchodzących z dołu */
+        @keyframes slideUp {
+            0% {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>MadzikLandia – TikTokerka i Twórczyni Internetowa</h1>
+    <h2>Kim jest MadzikLandia?</h2>
+    <p>MadzikLandia, znana na TikToku pod pseudonimem <strong>@madziklandiaa</strong>, to popularna polska twórczyni internetowa. Zdobyła szeroką publiczność dzięki swoim kreatywnym filmom oraz regularnym transmisjom na żywo, gdzie angażuje widzów w interaktywne rozmowy i zabawy.</p>
+
+    <!-- Przykładowy obrazek profilowy -->
+    <img src="profile.jpg" alt="MadzikLandia" class="profile">
+
+    <h2>Treści na TikToku</h2>
+    <ul>
+        <li>Transmisje na żywo</li>
+        <li>Codzienne vlogi</li>
+        <li>Wyzwania i trendy TikTokowe</li>
+        <li>Porady dotyczące życia codziennego</li>
+    </ul>
+
+    <h2>Zakładki społecznościowe</h2>
+    <nav>
+        <a href="https://www.tiktok.com/@madziklandiaa/live" target="_blank">TikTok</a>
+        <a href="https://www.youtube.com/@RodzinaPodMiastem">YouTube</a>
+        <a href="https://www.twitch.tv/madziklandia?tt_content=embed_visit_channel&tt_medium=embed">Twitch</a>
+        <a href="https://www.instagram.com/madziklandiaa/">Instagram</a>
+        <a href="https://discord.com/invite/ynfqVRvTnN">Discord</a>
+        <a href="https://tipo.live/p/madziklandia">Donaty</a>
+    </nav>
+
+    <h2>Obserwuj MadzikLandia</h2>
+    <p>Jeśli chcesz być na bieżąco z jej twórczością, śledź jej profil na TikToku.</p>
+</body>
+</html>
